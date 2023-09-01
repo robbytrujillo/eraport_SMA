@@ -45,6 +45,8 @@ function printContent(el) {
                                 <option value="Genap">Genap</option>
                             </select>
                         </div>
+
+                        
                     </div>
                     <div class="col-md-2 text-center" style="padding-top:25px;">
                         <button type="submit" class="btn btn-success btn-flat btn-sm" formtarget="_blank"><i
