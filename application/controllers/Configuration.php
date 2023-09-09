@@ -14,11 +14,11 @@ class Configuration extends CI_Controller {
         
     }
     
-    public function academic_year()
+    public function ()
     {
-        $data['configuration'] = $data['academic_year'] = true;
-        $data['academic_year'] = $this->configuration_m->getData();
-        $data['content'] = 'config/academic_year';
+        $data['configuration'] = $data[''] = true;
+        $data[''] = $this->configuration_m->getData();
+        $data['content'] = 'config/';
         $this->load->view('index',$data);
     }
     public function date_print()
@@ -50,13 +50,13 @@ class Configuration extends CI_Controller {
                 $this->vars['status'] = $this->db->update($this->table, $dataset,[$this->pk=>$id]) ? 'success' : 'error';
                 $this->vars['status'] == 'success' ? $this->toastr->success('Perubahan berhasil') : $this->toastr->error('Perubahan gagal');
                 if ($this->vars['status'] == 'success' && filter_var((string) $dataset['semester_aktif'], FILTER_VALIDATE_BOOLEAN)) {
-                    $this->configuration_m->deactivate_academic_years($id, 'semester_aktif');
+                    $this->configuration_m->deactivate_s($id, 'semester_aktif');
                 }
             } else {
                 $cek = $this->db->get_where($this->table,['tahun_akademik'=>$dataset['tahun_akademik']]);
                 if($cek->num_rows()==0){
                     if (filter_var((string) $dataset['semester_aktif'], FILTER_VALIDATE_BOOLEAN)) {
-                        $this->configuration_m->deactivate_academic_years(0, 'semester_aktif');
+                        $this->configuration_m->deactivate_s(0, 'semester_aktif');
                     }
                     $dataset['tanggal'] = date('Y-m-d');
                     $this->vars['status'] = $this->db->insert($this->table, $dataset) ? 'success' : 'error';
@@ -69,7 +69,7 @@ class Configuration extends CI_Controller {
             $this->toastr->error('Terjadi kesalahan input');
             
         }
-        redirect('configuration/academic_year');
+        redirect('configuration/');
     }
     /**
     * Dataset

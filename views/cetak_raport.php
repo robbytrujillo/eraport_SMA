@@ -20,8 +20,10 @@ error_reporting(0);
         <br />
         <img src="<?=base_url('uploads/')._school_profile()->logo;?>" alt="Logo Sekolah"
             style="width:70px;height:70px;float:left;margin-bottom:10px;">
+            <h3 style="line-height:5px;text-align:center;">YAYASAN DAKWAH ISLAM CAHAYA ILMU</h3>
         <h3 style="line-height:5px;text-align:center;"><?=_school_profile()->nama;?></h3>
-        <h3 style="line-height:5px;text-align:center;">Akreditasi <?=_school_profile()->akreditasi;?></h3>
+        <!-- <h3 style="line-height:5px;text-align:center;">Akreditasi <?=_school_profile()->akreditasi;?></h3> -->
+        
         <hr style="border:1px solid;margin-center:0px;width:800px;">
         <hr style="border:0.5px solid;margin-top:-15px;margin-center:0px;width:750px;">
         <p style="line-height:5px;text-align:center;margin-top:-10px;">Alamat : <?=_school_profile()->alamat;?> RT
@@ -31,11 +33,46 @@ error_reporting(0);
             <?=_school_profile()->dusun;?>, Kel. <?=_school_profile()->kelurahan;?>, <?=_school_profile()->kecamatan;?>,
             <?=_school_profile()->kabupaten;?> - <?=_school_profile()->provinsi;?></p>
         <br>
-        <h4 class="text-center">DATA HASIL BELAJAR SISWA</h4>
+        <h4 class="text-center">LAPORAN HASIL BELAJAR PESERTA DIDIK</h4>
         <h4 class="text-center">RAPORT SISWA</h4>
         <br>
         <table style="padding:15px;">
+        <tr>
+                <td width="150"><b>Nama</b></td>
+                <td width="20">:</td>
+                <td width="350"><?=$raport_data['nama'];?></td>
+                <td width="150"><b>Kelas</b></td>
+                <td width="20">:</td>
+                <td width="350"><?=$raport_data['kelas_kd'].' - '.$raport_data['kelas_nama'];?></td>
+            </tr>    
+
             <tr>
+                <td width="150"><b>NIPD</b></td>
+                <td width="20">:</td>
+                <td width="350"><?=$raport_data['nis'];?></td>
+                <td width="125"><b>Fase</b></td>
+                <td width="20">:</td>
+                <!-- <td><?=$raport_data['tahun_akademik'];?></td> -->
+            </tr>
+
+            <tr>
+                <td width="150"><b>Nama Sekolah</b></td>
+                <td width="20">:</td>
+                <td width="350">SMA Ibnu Hajar Boarding School</td>
+                <td width="125"><b>Semester</b></td>
+                <td width="20">:</td>
+                <td><?=$raport_data['semester'];?></td>
+            </tr>
+
+            <tr>
+                <td width="150"><b>Raport Bulanan</b></td>
+                <td width="20">:</td>
+                <td width="350">Raport Agustus</td>
+                <td width="125"><b>Tahun Pelajaran</b></td>
+                <td width="20">:</td>
+                <td><?=$raport_data['tahun_akademik'];?></td>
+            </tr>
+        <!-- <tr>
                 <td width="150"><b>NIS</b></td>
                 <td width="20">:</td>
                 <td width="350"><?=$raport_data['nis'];?></td>
@@ -44,7 +81,7 @@ error_reporting(0);
                 <td><?=$raport_data['tahun_akademik'];?></td>
             </tr>
             <tr>
-                <td width="150"><b>Nama Siswa</b></td>
+                <td width="150"><b>Nama</b></td>
                 <td width="20">:</td>
                 <td width="350"><?=$raport_data['nama'];?></td>
                 <td width="125"><b>Semester</b></td>
@@ -55,10 +92,10 @@ error_reporting(0);
                 <td width="150"><b>Kelas</b></td>
                 <td width="20">:</td>
                 <td width="350"><?=$raport_data['kelas_kd'].' - '.$raport_data['kelas_nama'];?></td>
-                <!-- <td width="125"><b>Tanggal Cetak</b></td>
+                <td width="125"><b>Tanggal Cetak</b></td>
                 <td width="20">:</td>
-                <td><?=$raport_data['tanggal'];?></td> -->
-            </tr>
+                <td><?=$raport_data['tanggal'];?></td> 
+            </tr> -->
         </table>
         <br>
         <table class="table table-bordered table-striped" style="font-size:12pt;">
