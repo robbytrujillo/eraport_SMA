@@ -103,27 +103,27 @@ error_reporting(0);
                 <tr>
                     <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">MATA PELAJARAN
                     </th>
-                    <th colspan="4" style="text-align:center;padding:0px;">NILAI</th>
+                    <!-- <th colspan="4" style="text-align:center;padding:0px;">NILAI</th> -->
                     <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">NILAI AKHIR
                     </th>
                     <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">PREDIKAT</th>
                     <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">KETERANGAN</th>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <th style="text-align:center;line-height:30px;padding:0px;">RTP</th>
                     <th style="text-align:center;line-height:30px;padding:0px;">RNU</th>
                     <th style="text-align:center;line-height:30px;padding:0px;">PTS</th>
                     <th style="text-align:center;line-height:30px;padding:0px;">UAS</th>
-                </tr>
+                </tr> -->
             </thead>
             <tbody>
                 <?php foreach ($raport_nilai as $row) :?>
                 <tr>
                     <td><?=$row['mapel_nama'];?></td>
-                    <td class="text-center"><?=$row['rata_tp'];?></td>
+                    <!-- <td class="text-center"><?=$row['rata_tp'];?></td>
                     <td class="text-center"><?=$row['rata_uh'];?></td>
                     <td class="text-center"><?=$row['nilai_pts'];?></td>
-                    <td class="text-center"><?=$row['nilai_uas'];?></td>
+                    <td class="text-center"><?=$row['nilai_uas'];?></td> -->
                     <td class="text-center"><?=$row['nilai_akhir'];?></td>
                     <td class="text-center"><?=$row['nilai_huruf'];?></td>
                     <td><?=$row['deskripsi'];?></td>
@@ -131,7 +131,7 @@ error_reporting(0);
                 <?php endforeach;?>
             </tbody>
         </table>
-        <p>
+        <!-- <p>
             Keterangan :
             <br>
             <b>RTP</b> : Rata-rata nilai Tugas/PR
@@ -141,23 +141,12 @@ error_reporting(0);
             <b>PTS</b> : Penilaian Tengah Semester
             <br>
             <b>UAS</b> : Ujian Akhir Semester
-        </p>
+        </p> -->
         <p style="text-align:right;margin-right:125px;"><?=$raport_data['tempat'];?>,
             <?=date('d M Y',strtotime($raport_data['tanggal']));?></p>
         <table>
             <tr>
-                <td class="text-center" width="500">
-                    Kepala Sekolah
-                    <br>
-                    <?=_school_profile()->nama;?>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <u><?=_school_profile()->nama_kepsek;?></u>
-                    <br>
-                    NIP. <?=_school_profile()->nip_kepsek;?>
-                </td>
+                
                 <td class="text-center" width="500">
                     Wali Kelas
                     <br>
@@ -167,6 +156,18 @@ error_reporting(0);
                     <u><?=$raport_wali['nama'];?></u>
                     <br>
                     NIP. <?=$raport_wali['nip'];?>
+                </td>
+                <td class="text-center" width="500">
+                    Kepala Sekolah 
+                    <br>
+                    <?=_school_profile()->nama;?>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <u><?=_school_profile()->nama_kepsek;?></u>
+                    <br>
+                    NIP. <?=_school_profile()->nip_kepsek;?>
                 </td>
             </tr>
         </table>
