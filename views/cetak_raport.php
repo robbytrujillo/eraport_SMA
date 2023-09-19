@@ -148,7 +148,19 @@ error_reporting(0);
             <tr>
                 
                 <td class="text-center" width="500">
+                    Orang Tua Siswa
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <u>____________________________</u>
+                    <br>
+                    <!-- NIP. <?=$raport_wali['nip'];?> -->
+                </td>
+                <td class="text-center" width="500">
                     Wali Kelas
+                    <br>
                     <br>
                     <br>
                     <br>
