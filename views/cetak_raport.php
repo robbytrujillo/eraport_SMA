@@ -104,10 +104,10 @@ error_reporting(0);
                     <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">MATA PELAJARAN
                     </th>
                     <!-- <th colspan="4" style="text-align:center;padding:0px;">NILAI</th> -->
-                    <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">NILAI AKHIR
+                    <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">Angka
                     </th>
                     <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">PREDIKAT</th>
-                    <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">KETERANGAN</th>
+                    <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">Capaian Kompetensi</th>
                 </tr>
                 <!-- <tr>
                     <th style="text-align:center;line-height:30px;padding:0px;">RTP</th>
@@ -159,6 +159,7 @@ error_reporting(0);
                     <!-- NIP. <?=$raport_wali['nip'];?> -->
                 </td>
                 <td class="text-center" width="500">
+                    <br>
                     Wali Kelas
                     <br>
                     <br>
@@ -167,7 +168,7 @@ error_reporting(0);
                     <br>
                     <u><?=$raport_wali['nama'];?></u>
                     <br>
-                    NIP. <?=$raport_wali['nip'];?>
+                    NIK. <?=$raport_wali['nip'];?>
                 </td>
                 <td class="text-center" width="500">
                     Kepala Sekolah 
@@ -179,7 +180,7 @@ error_reporting(0);
                     <br>
                     <u><?=_school_profile()->nama_kepsek;?></u>
                     <br>
-                    NIP. <?=_school_profile()->nip_kepsek;?>
+                    NIK. <?=_school_profile()->nip_kepsek;?>
                 </td>
             </tr>
         </table>
