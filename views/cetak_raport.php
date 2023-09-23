@@ -51,8 +51,9 @@ error_reporting(0);
                 <td width="20">:</td>
                 <td width="350"><?=$raport_data['nis'];?></td>
                 <td width="125"><b>Fase</b></td>
-                <td width="20">:</td>
+                <td width="20">: </td>
                 <!-- <td><?=$raport_data['tahun_akademik'];?></td> -->
+                <td>E</td>
             </tr>
 
             <tr>
