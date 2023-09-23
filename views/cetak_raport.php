@@ -47,7 +47,7 @@ error_reporting(0);
             </tr>    
 
             <tr>
-                <td width="150"><b>NIPD</b></td>
+                <td width="150"><b>NISN</b></td>
                 <td width="20">:</td>
                 <td width="350"><?=$raport_data['nis'];?></td>
                 <td width="125"><b>Fase</b></td>
