@@ -68,7 +68,7 @@ error_reporting(0);
             <tr>
                 <td width="150"><b>Raport Bulanan</b></td>
                 <td width="20">:</td>
-                <td width="350">Raport Agustus</td>
+                <td width="350">Raport September</td>
                 <td width="125"><b>Tahun Pelajaran</b></td>
                 <td width="20">:</td>
                 <td><?=$raport_data['tahun_akademik'];?></td>
