@@ -169,7 +169,7 @@ error_reporting(0);
                     <br>
                     <u><?=$raport_wali['nama'];?></u>
                     <br>
-                    NIK. <?=$raport_wali['nip'];?>
+                    NIP. <?=$raport_wali['nip'];?>
                 </td>
                 <td class="text-center" width="500">
                     Kepala Sekolah 
@@ -181,7 +181,7 @@ error_reporting(0);
                     <br>
                     <u><?=_school_profile()->nama_kepsek;?></u>
                     <br>
-                    NIK. <?=_school_profile()->nip_kepsek;?>
+                    NIP. <?=_school_profile()->nip_kepsek;?>
                 </td>
             </tr>
         </table>
