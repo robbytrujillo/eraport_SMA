@@ -181,6 +181,9 @@ error_reporting(0);
                     <br>
                     <u><?=_school_profile()->nama_kepsek;?></u>
                     <br>
+<!--                     
+                    NIP. <?=_school_profile()->nip_kepsek;?> -->
+
                     NIP. <?=_school_profile()->nip_kepsek;?>
                 </td>
             </tr>
