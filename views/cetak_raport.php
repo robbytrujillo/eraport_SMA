@@ -108,7 +108,7 @@ error_reporting(0);
                     <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">Angka
                     </th>
                     <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">PREDIKAT</th>
-                    <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">Capaian Kompetensi</th>
+                    <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">CAPAIAN KOMPETENSI</th>
                 </tr>
                 <!-- <tr>
                     <th style="text-align:center;line-height:30px;padding:0px;">RTP</th>

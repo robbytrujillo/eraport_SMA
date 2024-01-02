@@ -34,14 +34,14 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <b>E-Raport</b>
+            <img src="assets/dist/img/ihbslogonew.png">
             <p style="font-size:10pt;">SMA IHBS</p>
         </div>
         <!-- /.login-logo -->
         <div class="login-box-body">
             <?=$this->session->flashdata('msg');?>
             <p class="login-box-msg">Please enter your username and password !</p>
-<br><center><p>Repost by <a href='' title='itihbsdev' target='_blank'>IT-IHBS-DEV</a></p></center>
+            <br><center><p>Repost by <a href='' title='itihbsdev' target='_blank'>IT-IHBS-DEV</a></p></center>
 
             <form action="" method="post">
                 <div class="form-group has-feedback">
