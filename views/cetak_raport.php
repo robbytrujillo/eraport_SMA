@@ -20,8 +20,8 @@ error_reporting(0);
         <br />
         <img src="<?=base_url('uploads/')._school_profile()->logo;?>" alt="Logo Sekolah"
             style="width:70px;height:70px;float:left;margin-bottom:10px;">
-            <h3 style="line-height:5px;text-align:center;">YAYASAN DAKWAH ISLAM CAHAYA ILMU</h3>
-        <h3 style="line-height:5px;text-align:center;"><?=_school_profile()->nama;?></h3>
+            <h3 style="line-height:5px;text-align:center;"><b>YAYASAN DAKWAH ISLAM CAHAYA ILMU</b></h2>
+        <h2 style="line-height:5px;text-align:center;"><b><?=_school_profile()->nama;?></b></h2>
         <!-- <h3 style="line-height:5px;text-align:center;">Akreditasi <?=_school_profile()->akreditasi;?></h3> -->
         
         <hr style="border:1px solid;margin-center:0px;width:800px;">

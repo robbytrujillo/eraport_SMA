@@ -228,7 +228,9 @@
                                     Mengajar</a></li>
                             <li <?=isset($wali_kelas)?'class="active"':'';?>><a
                                     href="<?=base_url('setting/wali_kelas');?>"><i class="fa fa-angle-double-right"></i>
-                                    Wali Kelas</a></li>
+                                    Wali Kelas</a></li
+                                    
+                                    >
                             <li <?=isset($sett_kelas)?'class="active"':'';?>><a
                                     href="<?=base_url('setting/set_kelas');?>"><i class="fa fa-angle-double-right"></i>
                                     Rombongan Belajar</a></li>
