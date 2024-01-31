@@ -252,7 +252,14 @@
                     <?php if(__session('access')=='super_user'):?>
                     <li <?=isset($report)?'class="active"':'';?>>
                         <a href="<?=base_url('raport');?>">
-                            <i class="fa fa-print"></i> <span>Cetak Raport</span>
+                            <i class="fa fa-print"></i> <span>Cetak Raport Bulanan</span>
+                        </a>
+                    </li>
+                    <?php endif;?>
+                    <?php if(__session('access')=='super_user'):?>
+                    <li <?=isset($report)?'class="active"':'';?>>
+                        <a href="<?=base_url('raport');?>">
+                            <i class="fa fa-print"></i> <span>Cetak Raport Semester</span>
                         </a>
                     </li>
                     <?php endif;?>
