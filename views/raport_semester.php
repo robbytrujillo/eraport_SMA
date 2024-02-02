@@ -7,16 +7,18 @@ function printContent(el) {
     document.body.innerHTML = restorepage;
 }
 </script>
+
+<!-- Cetak Raport Semester -->
 <!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
-        Cetak Raport Bulanan
+        Cetak Raport Semester
     </h1>
     <?php if(__session('access')=='super_user'):?>
-    <ol class="breadcrumb">
+    <!-- <ol class="breadcrumb">
         <li><a href="<?=base_url('dashboard');?>"><i class="fa fa-home"></i> Beranda</a></li>
         <li class="active">Cetak Raport</li>
-    </ol>
+    </ol> -->
     <?php endif;?>
 </section>
 
@@ -81,7 +83,3 @@ function printContent(el) {
         </form>
     </div>
 </section>
-
-
-
-
