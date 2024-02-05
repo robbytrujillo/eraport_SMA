@@ -251,7 +251,7 @@
                     <?php endif;?>
                     <?php if(__session('access')=='super_user'):?>
                     <li <?=isset($report)?'class="active"':'';?>>
-                        <a href="<?=base_url('raport_bulanan');?>">
+                        <a href="<?=base_url('raport');?>">
                             <i class="fa fa-print"></i> <span>Cetak Raport Bulanan</span>
                         </a>
                     </li>

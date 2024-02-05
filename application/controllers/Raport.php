@@ -31,7 +31,7 @@ class Raport extends CI_Controller {
     }
     public function siswa()
     {
-        $data['report_siswa'] = true;
+        $data['raport_siswa'] = true;
         $data['content'] = 'raport_siswa';
         $this->load->view('index',$data);
     }
