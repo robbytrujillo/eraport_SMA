@@ -12,6 +12,7 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <link rel="icon" href="">
+    
     <!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="<?= base_url('assets/'); ?>bower_components/bootstrap/dist/css/bootstrap.min.css">
     <!-- Font Awesome -->
@@ -33,26 +34,31 @@
 
 <body class="hold-transition login-page">
     <div class="login-box">
-        <div class="login-logo">
-            <img src="assets/dist/img/ihbslogonew.png" width="200px" height="50px">
-            <p style="font-size:15pt; font: bold; color: darkolivegreen;">E-RAPORT SMA IHBS</p>
-        </div>
+        <!-- <div class="login-logo">
+            <img src="assets/dist/img/logo-ihbs.png" width="240px" height="100px">
+            
+        </div> -->
         <!-- /.login-logo -->
-        <div class="login-box-body" style="border-radius: 5%">
+        <div class="login-box-body" style="border-radius: 25px">
             <?=$this->session->flashdata('msg');?>
-            <p class="login-box-msg">Silahkan isi username and password anda!</p>
+            
             
 
             <form action="" method="post">
-                <div class="form-group has-feedback">
-                    <input type="text" class="form-control" value="admin" placeholder="Username" name="username" autofocus>
-                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                <div class="login-logo">
+                    <img src="assets/dist/img/logo-ihbs.png" width="200px" height="80px">
                 </div>
                 <div class="form-group has-feedback">
-                    <input type="password" class="form-control" value="admin" placeholder="Password" name="password">
-                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                    <input type="text" class="form-control" value="admin" placeholder="Username" name="username" style="border-radius: 10px; min-height:45px" autofocus>
+                    <!-- <span class="glyphicon glyphicon-user form-control-feedback min-height:45px"></span> -->
                 </div>
-                <button type="submit" class="btn btn-success btn-block btn-flat" >Login</button>
+                <div class="form-group has-feedback">
+                    <input type="password" class="form-control" value="admin" placeholder="Password" name="password" style="border-radius: 10px; min-height:45px">
+                    <!-- <span class="glyphicon glyphicon-lock form-control-feedback min-height:45px"></span> -->
+                </div>
+                <button type="submit" class="btn btn-block btn-flat" style="background-color: #477329; border-radius: 25px; min-height:45px"><span style="color: #fff; font-size: medium">Login</span></button>
+                <br>
+                <br><center><p>Repost by <a href='' title='itihbsdev' target='_blank'>IT-IHBS-DEV</a></p></center>
             </form>
 
             <!-- <a href="#">I forgot my password ?</a><br>
@@ -62,7 +68,7 @@
         <!-- <a href="<?=base_url('dashboard');?>" class="btn btn-default btn-xs btn-block btn-flat">Aplikasi Raport
             Online</a> -->
         <!-- /.login-box-body -->
-        <br><center><p>Repost by <a href='' title='itihbsdev' target='_blank'>IT-IHBS-DEV</a></p></center>
+        
     </div>
     <!-- /.login-box -->
 
@@ -70,6 +76,8 @@
     <script src="<?= base_url('assets/'); ?>bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap 3.3.7 -->
     <script src="<?= base_url('assets/'); ?>bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 
 
