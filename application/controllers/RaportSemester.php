@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Raport extends CI_Controller {
+class RaportSemester extends CI_Controller {
 
     public function __construct()
     {
@@ -15,7 +15,7 @@ class Raport extends CI_Controller {
     public function index()
     {
         $data['report'] = true;
-        $data['content'] = 'raport';
+        $data['content'] = 'raport_semester';
         $this->load->view('index',$data);
     }
     public function cetak()
@@ -46,7 +46,6 @@ class Raport extends CI_Controller {
         ->get('wali_kelas x')->row();
         if($row==null){
             redirect('raport/siswa','refresh');
-            cmd
         }
         $idkelas = $row->idkelas;
         $idsiswa = $row->idsiswa;

@@ -258,7 +258,7 @@
                     <?php endif;?>
                     <?php if(__session('access')=='super_user'):?>
                     <li <?=isset($report)?'class="active"':'';?>>
-                        <a href="<?=base_url('raport_semester');?>">
+                        <a href="<?=base_url('RaportSemester');?>">
                             <i class="fa fa-print"></i> <span>Cetak Raport Semester</span>
                         </a>
                     </li>

@@ -3306,7 +3306,8 @@ table.text-center th {
 .login-page,
 .register-page {
   height: auto;
-  background: #d2d6de;
+  /* background: #d2d6de; */
+  background: #fff;
 }
 .login-box,
 .register-box {
@@ -3322,7 +3323,8 @@ table.text-center th {
 }
 .login-box-body,
 .register-box-body {
-  background: #fff;
+  /* background: #fff; */
+  background: #d2d6de;
   padding: 20px;
   border-top: 0;
   color: #666;

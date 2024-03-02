@@ -34,14 +34,14 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <img src="assets/dist/img/ihbslogonew.png">
-            <p style="font-size:10pt;">SMA IHBS</p>
+            <img src="assets/dist/img/ihbslogonew.png" width="200px" height="50px">
+            <p style="font-size:15pt; font: bold; color: darkolivegreen;">E-RAPORT SMA IHBS</p>
         </div>
         <!-- /.login-logo -->
-        <div class="login-box-body">
+        <div class="login-box-body" style="border-radius: 5%">
             <?=$this->session->flashdata('msg');?>
-            <p class="login-box-msg">Please enter your username and password !</p>
-            <br><center><p>Repost by <a href='' title='itihbsdev' target='_blank'>IT-IHBS-DEV</a></p></center>
+            <p class="login-box-msg">Silahkan isi username and password anda!</p>
+            
 
             <form action="" method="post">
                 <div class="form-group has-feedback">
@@ -52,16 +52,17 @@
                     <input type="password" class="form-control" value="admin" placeholder="Password" name="password">
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block btn-flat">Login</button>
+                <button type="submit" class="btn btn-success btn-block btn-flat" >Login</button>
             </form>
 
             <!-- <a href="#">I forgot my password ?</a><br>
             Not ready account ?<a href="<?=base_url('auth/register');?>" class="text-center"> Register here</a> -->
 
         </div>
-        <a href="<?=base_url('dashboard');?>" class="btn btn-default btn-xs btn-block btn-flat">Aplikasi Raport
-            Online</a>
+        <!-- <a href="<?=base_url('dashboard');?>" class="btn btn-default btn-xs btn-block btn-flat">Aplikasi Raport
+            Online</a> -->
         <!-- /.login-box-body -->
+        <br><center><p>Repost by <a href='' title='itihbsdev' target='_blank'>IT-IHBS-DEV</a></p></center>
     </div>
     <!-- /.login-box -->
 
