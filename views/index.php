@@ -108,7 +108,7 @@
                 <span class="logo-mini"><b>E</b>R</span>
                 <!-- logo for regular state and mobile devices -->
                 <span class="logo-lg">
-                <img src="assets/dist/img/ihbs-logo.png" size="small"><b>e</b>raportSMA</span>
+                <img src="assets/dist/img/ihbs-logo.png"><b>e</b>raportSMA</span>
             </a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top">
