@@ -46,7 +46,7 @@
 
             <form action="" method="post">
                 <div class="login-logo">
-                    <img src="assets/dist/img/logo-ihbs.png" width="200px" height="80px">
+                    <img src="assets/dist/img/logo-ihbs.png" width="200px" height="70px">
                 </div>
                 <div class="form-group has-feedback">
                     <input type="text" class="form-control" value="admin" placeholder="Username" name="username" style="border-radius: 10px; min-height:45px" autofocus>
@@ -58,7 +58,7 @@
                 </div>
                 <button type="submit" class="btn btn-block btn-flat" style="background-color: #477329; border-radius: 25px; min-height:45px"><span style="color: #fff; font-size: medium">Login</span></button>
                 <br>
-                <br><center><p>Repost by <a href='' title='itihbsdev' target='_blank'>IT-IHBS-DEV</a></p></center>
+                <br><center><p>Created by <a href='' title='itihbsdev' target='_blank'>IT Development IHBS</a></p></center>
             </form>
 
             <!-- <a href="#">I forgot my password ?</a><br>
