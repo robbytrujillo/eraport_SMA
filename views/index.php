@@ -272,7 +272,12 @@
                     </li>
                     <li <?=isset($report_siswa)?'class="active"':'';?>>
                         <a href="<?=base_url('raport/siswa');?>">
-                            <i class="fa fa-print"></i> <span>Raport</span>
+                            <i class="fa fa-print"></i> <span>Raport Bulanan</span>
+                        </a>
+                    </li>
+                    <li <?=isset($report_siswa)?'class="active"':'';?>>
+                        <a href="<?=base_url('raport/siswa_semester');?>">
+                            <i class="fa fa-print"></i> <span>Raport Semester</span>
                         </a>
                     </li>
                     <?php endif;?>

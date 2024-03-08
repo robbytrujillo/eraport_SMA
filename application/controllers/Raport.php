@@ -46,7 +46,6 @@ class Raport extends CI_Controller {
         ->get('wali_kelas x')->row();
         if($row==null){
             redirect('raport/siswa','refresh');
-            cmd
         }
         $idkelas = $row->idkelas;
         $idsiswa = $row->idsiswa;
