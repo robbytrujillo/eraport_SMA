@@ -53,6 +53,7 @@ function printContent(el) {
                                 <?php foreach(list_kelas() as $row):?>
                                 <option value="<?=$row->idkelas;?>"><?=$row->kelas_kd.' - '.$row->kelas_nama;?>
                                 </option>
+                                
                                 <?php endforeach;?>
                             </select>
                         </div>

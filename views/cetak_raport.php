@@ -92,7 +92,7 @@ error_reporting(0);
             <tr>
                 <td width="150"><b>Kelas</b></td>
                 <td width="20">:</td>
-                <td width="350"><?=$raport_data['kelas_kd'].' - '.$raport_data['kelas_nama'];?></td>
+                <td width="350"><?=$raport_data['kelas_nama'];?></td>
                 <td width="125"><b>Tanggal Cetak</b></td>
                 <td width="20">:</td>
                 <td><?=$raport_data['tanggal'];?></td> 
@@ -102,12 +102,14 @@ error_reporting(0);
         <table class="table table-bordered table-striped" style="font-size:12pt;">
             <thead>
                 <tr>
+                    <!-- <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">NO
+                    </th> -->
                     <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">MATA PELAJARAN
                     </th>
                     <!-- <th colspan="4" style="text-align:center;padding:0px;">NILAI</th> -->
-                    <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">Angka
+                    <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">NILAI
                     </th>
-                    <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">PREDIKAT</th>
+                    <!-- <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">PREDIKAT</th> -->
                     <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">CAPAIAN KOMPETENSI</th>
                 </tr>
                 <!-- <tr>
@@ -120,13 +122,14 @@ error_reporting(0);
             <tbody>
                 <?php foreach ($raport_nilai as $row) :?>
                 <tr>
+                   
                     <td><?=$row['mapel_nama'];?></td>
                     <!-- <td class="text-center"><?=$row['rata_tp'];?></td>
                     <td class="text-center"><?=$row['rata_uh'];?></td>
                     <td class="text-center"><?=$row['nilai_pts'];?></td>
                     <td class="text-center"><?=$row['nilai_uas'];?></td> -->
                     <td class="text-center"><?=$row['nilai_akhir'];?></td>
-                    <td class="text-center"><?=$row['nilai_huruf'];?></td>
+                    <!-- <td class="text-center"><?=$row['nilai_huruf'];?></td> -->
                     <td><?=$row['deskripsi'];?></td>
                 </tr>
                 <?php endforeach;?>

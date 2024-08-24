@@ -11,7 +11,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <link rel="icon" href="">
+    <link rel="icon" href="" />
     
     <!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="<?= base_url('assets/'); ?>bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -40,9 +40,7 @@
         </div> -->
         <!-- /.login-logo -->
         <div class="login-box-body" style="border-radius: 25px">
-            <?=$this->session->flashdata('msg');?>
-            
-            
+            <?=$this->session->flashdata('msg'); ?>
 
             <form action="" method="post">
                 <div class="login-logo">
@@ -79,6 +77,5 @@
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
-
 
 </html>

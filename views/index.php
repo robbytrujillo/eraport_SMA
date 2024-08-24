@@ -246,7 +246,12 @@
                     </li>
                     <li <?=isset($nilai)?'class="active"':'';?>>
                         <a href="<?=base_url('nilai');?>">
-                            <i class="fa fa-edit"></i> <span>Input Nilai</span>
+                            <i class="fa fa-edit"></i> <span>Input Nilai Bulanan</span>
+                        </a>
+                    </li>
+                    <li <?=isset($nilai)?'class="active"':'';?>>
+                        <a href="<?=base_url('nilaisemester');?>">
+                            <i class="fa fa-edit"></i> <span>Input Nilai Semester</span>
                         </a>
                     </li>
                     <?php endif;?>
