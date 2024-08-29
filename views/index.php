@@ -249,11 +249,11 @@
                             <i class="fa fa-edit"></i> <span>Input Nilai Bulanan</span>
                         </a>
                     </li>
-                    <li <?=isset($nilai)?'class="active"':'';?>>
+                    <!-- <li <?=isset($nilai)?'class="active"':'';?>>
                         <a href="<?=base_url('nilaisemester');?>">
                             <i class="fa fa-edit"></i> <span>Input Nilai Semester</span>
                         </a>
-                    </li>
+                    </li> -->
                     <?php endif;?>
                     <?php if(__session('access')=='super_user'):?>
                     <li <?=isset($report)?'class="active"':'';?>>
@@ -262,13 +262,13 @@
                         </a>
                     </li>
                     <?php endif;?>
-                    <?php if(__session('access')=='super_user'):?>
+                    <!-- <?php if(__session('access')=='super_user'):?>
                     <li <?=isset($report)?'class="active"':'';?>>
                         <a href="<?=base_url('RaportSemester');?>">
                             <i class="fa fa-print"></i> <span>Cetak Raport Semester</span>
                         </a>
                     </li>
-                    <?php endif;?>
+                    <?php endif;?> -->
                     <?php if(__session('access')=='siswa'):?>
                     <li <?=isset($biodata)?'class="active"':'';?>>
                         <a href="<?=base_url('siswa/biodata');?>">
