@@ -15,7 +15,6 @@ error_reporting(0);
 </head>
 
 <body>
-
     <div style="page-break-after:always;">
         <br />
         <img src="<?=base_url('uploads/')._school_profile()->logo;?>" alt="Logo Sekolah"
