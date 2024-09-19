@@ -101,16 +101,16 @@ error_reporting(0);
         <table class="table table-bordered table-striped" style="font-size:12pt;">
             <thead>
                 <tr>
-                    <th>No</th>
+                    <!-- <th>No</th> -->
                     <!-- <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">NO
                     </th> -->
-                    <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">MATA PELAJARAN
+                    <th rowspan="2" colspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">MATA PELAJARAN
                     </th>
                     <!-- <th colspan="4" style="text-align:center;padding:0px;">NILAI</th> -->
-                    <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">NILAI
+                    <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">Angka
                     </th>
                     <!-- <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">PREDIKAT</th> -->
-                    <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">DESKRIPSI</th>
+                    <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">Capaian Kompetensi</th>
                 </tr>
                 <!-- <tr>
                     <th style="text-align:center;line-height:30px;padding:0px;">RTP</th>
@@ -154,7 +154,7 @@ error_reporting(0);
         <table>
             <tr>
                 
-                <!-- <td class="text-center" width="500">
+                <td class="text-center" width="500">
                     Orang Tua Siswa
                     <br>
                     <br>
@@ -162,9 +162,9 @@ error_reporting(0);
                     <br>
                     <br>
                     <u>____________________________</u>
-                    <br> -->
+                    <br>
                     <!-- NIP. <?=$raport_wali['nip'];?> -->
-                <!-- </td> -->
+                </td>
                 <td class="text-center" width="500">
                     <br>
                     Wali Kelas
@@ -177,6 +177,18 @@ error_reporting(0);
                     <br>
                     NIP. <?=$raport_wali['nip'];?>
                 </td>
+                <br>
+                
+            </tr>
+            
+        </table>
+        <br>
+        <br>
+        <center>
+        <table>
+        
+        <tr>
+        
                 <td class="text-center" width="500">
                     Kepala Sekolah 
                     <br>
@@ -192,8 +204,11 @@ error_reporting(0);
 
                     NIP. <?=_school_profile()->nip_kepsek;?>
                 </td>
+                
             </tr>
+           
         </table>
+        </center>
     </div>
 </body>
 
