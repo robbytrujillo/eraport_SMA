@@ -101,6 +101,7 @@ error_reporting(0);
         <table class="table table-bordered table-striped" style="font-size:12pt;">
             <thead>
                 <tr>
+                    <th>No</th>
                     <!-- <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">NO
                     </th> -->
                     <th rowspan="2" style="text-align:center;line-height:30px;padding:0px 0px 15px 0px;">MATA PELAJARAN
@@ -119,9 +120,12 @@ error_reporting(0);
                 </tr> -->
             </thead>
             <tbody>
-                <?php foreach ($raport_nilai as $row) :?>
+                
+                <?php 
+                $no = 1;
+                foreach ($raport_nilai as $row) :?>
                 <tr>
-                   
+                   <td><?= $no++ ?></td>
                     <td><?=$row['mapel_nama'];?></td>
                     <!-- <td class="text-center"><?=$row['rata_tp'];?></td>
                     <td class="text-center"><?=$row['rata_uh'];?></td>
