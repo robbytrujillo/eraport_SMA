@@ -177,7 +177,24 @@ error_reporting(0);
                     <br>
                     NIP. <?=$raport_wali['nip'];?>
                 </td>
-                <br>
+                <td class="text-center" width="500">
+                    <!-- Kepala Sekolah  -->
+                    Mengetahui
+                    <br>
+                    <!-- <?=_school_profile()->nama;?> -->
+                    Kepala SMA IHBS
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <u><?=_school_profile()->nama_kepsek;?></u>
+                    <br>
+<!--                     
+                    NIP. <?=_school_profile()->nip_kepsek;?> -->
+
+                    NIP. <?=_school_profile()->nip_kepsek;?>
+                </td>
                 
             </tr>
             
