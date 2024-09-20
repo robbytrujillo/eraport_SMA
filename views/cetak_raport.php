@@ -188,7 +188,6 @@ error_reporting(0);
         <table>
         
         <tr>
-        
                 <td class="text-center" width="500">
                     Kepala Sekolah 
                     <br>
