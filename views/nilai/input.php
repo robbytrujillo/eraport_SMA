@@ -123,18 +123,18 @@ function nilaiAkhir(x) {
     var selisih_kkm = (100 - kkm) / 3;
     if (parseInt(na) < kkm) {
         $('[name="grade' + x + '"]').val("D");
-        $('[name="deskripsi' + x + '"]').val("Kurang Baik");
+        $('[name="deskripsi' + x + '"]').val("Peserta didik menunjukkan kemampuan kurang baik dalam memahami materi");
     } else if (parseInt(na) >= kkm && parseInt(na) <= Math.round(kkm + selisih_kkm) - 1) {
         $('[name="grade' + x + '"]').val("C");
-        $('[name="deskripsi' + x + '"]').val("Cukup Baik");
+        $('[name="deskripsi' + x + '"]').val("Peserta didik menunjukkan kemampuan cukup baik dalam memahami materi");
     } else if (parseInt(na) >= Math.round(kkm + selisih_kkm) && parseInt(na) <= Math.round(kkm + (selisih_kkm * 2)) -
         1) {
         $('[name="grade' + x + '"]').val("B");
-        $('[name="deskripsi' + x + '"]').val("Baik");
+        $('[name="deskripsi' + x + '"]').val("Peserta didik menunjukkan kemampuan baik dalam memahami materi");
     } else if (parseInt(na) >= Math.round(kkm + (selisih_kkm * 2)) && parseInt(na) <= (kkm + (selisih_kkm *
             3))) {
         $('[name="grade' + x + '"]').val("A");
-        $('[name="deskripsi' + x + '"]').val("Sangat Baik");
+        $('[name="deskripsi' + x + '"]').val("Peserta didik menunjukkan kemampuan sangat baik dalam memahami materi");
     }
 }
 
