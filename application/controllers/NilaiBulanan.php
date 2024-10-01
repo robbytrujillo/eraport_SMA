@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Nilai extends CI_Controller {
+class NilaiBulanan extends CI_Controller {
 
     public function __construct()
     {
@@ -15,20 +15,20 @@ class Nilai extends CI_Controller {
 
     public function index()
     {
-        $data['nilai'] = true;
+        $data['nilaiBulanan'] = true;
         $data['class'] = $this->mengajar_m->getData(_active_years()->idtahun_akademik,_active_years()->semester);
-        $data['content'] = 'nilai/list';
+        $data['content'] = 'nilaiBulanan/list_bulanan';
         $this->load->view('index',$data);
     }
-    public function input($kelas_kd,$mapel_kd)
-    {
-        // var_dump($kelas_kd);
-        // var_dump($mapel_kd);die;
-        $data['nilai'] = true;
-        $data['rowI'] = $this->mengajar_m->getDataByMapel(_active_years()->idtahun_akademik,_active_years()->semester,$kelas_kd,$mapel_kd);
-        $data['content'] = 'nilai/input';
-        $this->load->view('index',$data);
-    }
+    // public function input($kelas_kd,$mapel_kd)
+    // {
+    //     // var_dump($kelas_kd);
+    //     // var_dump($mapel_kd);die;
+    //     $data['nilai'] = true;
+    //     $data['rowI'] = $this->mengajar_m->getDataByMapel(_active_years()->idtahun_akademik,_active_years()->semester,$kelas_kd,$mapel_kd);
+    //     $data['content'] = 'nilai/input';
+    //     $this->load->view('index',$data);
+    // }
     
     public function input_bulanan($kelas_kd,$mapel_kd)
     {
@@ -44,9 +44,9 @@ class Nilai extends CI_Controller {
     {
         // var_dump($kelas_kd);
         // var_dump($mapel_kd);die;
-        $data['nilai'] = true;
+        $data['nilaiBulanan'] = true;
         $data['rowI'] = $this->mengajar_m->getDataByMapel(_active_years()->idtahun_akademik,_active_years()->semester,$kelas_kd,$mapel_kd);
-        $data['content'] = 'nilai/input_bulanan_sts';
+        $data['content'] = 'nilaiBulanan/input_bulanan_sts';
         $this->load->view('index',$data);
     }
     public function save_kkm($id)

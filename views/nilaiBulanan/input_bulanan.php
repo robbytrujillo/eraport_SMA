@@ -162,7 +162,7 @@ function minmax(value, min, max) {
 <!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
-        Input Nilai
+        Input Nilai Bulanan
     </h1>
     <?php if(__session('access')=='super_user'):?>
     <ol class="breadcrumb">
@@ -201,7 +201,7 @@ function minmax(value, min, max) {
                         <label for="kkm" class="col-xs-2 control-label">KKM</label>
                         <div class="col-xs-4">
                             <input type="hidden" name="current_url"
-                                value="<?=base_url('nilai/input/').$rowI->kelas_kd.'/'.$rowI->mapel_kd;?>">
+                                value="<?=base_url('nilaiBulanan/input_bulanan/').$rowI->kelas_kd.'/'.$rowI->mapel_kd;?>">
                             <input type="hidden" name="idkelas" value="<?=$rowI->idkelas;?>">
                             <input type="hidden" name="idmapel" value="<?=$rowI->idmapel;?>">
                             <input type="number" class="form-control" id="kkm" name="kkm" value="<?=$rowI->kkm;?>"

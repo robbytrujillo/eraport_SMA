@@ -244,16 +244,16 @@
                             <i class="fa fa-users"></i> <span>Siswa Aktif</span>
                         </a>
                     </li>
-                    <li <?=isset($nilai)?'class="active"':'';?>>
+                    <!-- <li <?=isset($nilai)?'class="active"':'';?>>
                         <a href="<?=base_url('nilai');?>">
                             <i class="fa fa-edit"></i> <span>Input Nilai Bulanan</span>
                         </a>
-                    </li>
-                    <!-- <li <?=isset($nilai)?'class="active"':'';?>>
-                        <a href="<?=base_url('nilaisemester');?>">
-                            <i class="fa fa-edit"></i> <span>Input Nilai Semester</span>
-                        </a>
                     </li> -->
+                    <li <?=isset($nilai)?'class="active"':'';?>>
+                        <a href="<?=base_url('nilaiBulanan');?>">
+                            <i class="fa fa-edit"></i> <span>Input Nilai Bulanan</span>
+                        </a>
+                    </li>
                     <?php endif;?>
                     <?php if(__session('access')=='super_user'):?>
                     <li <?=isset($report)?'class="active"':'';?>>
