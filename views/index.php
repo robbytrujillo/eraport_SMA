@@ -244,14 +244,20 @@
                             <i class="fa fa-users"></i> <span>Siswa Aktif</span>
                         </a>
                     </li>
-                    <!-- <li <?=isset($nilai)?'class="active"':'';?>>
-                        <a href="<?=base_url('nilai');?>">
-                            <i class="fa fa-edit"></i> <span>Input Nilai Bulanan</span>
-                        </a>
-                    </li> -->
+                   
                     <li <?=isset($nilai)?'class="active"':'';?>>
                         <a href="<?=base_url('nilaiBulanan');?>">
                             <i class="fa fa-edit"></i> <span>Input Nilai Bulanan</span>
+                        </a>
+                    </li>
+                    <li <?=isset($nilai)?'class="active"':'';?>>
+                        <a href="<?=base_url('nilaiBulanan');?>">
+                            <i class="fa fa-edit"></i> <span>Input Nilai Bulanan + STS</span>
+                        </a>
+                    </li>
+                     <li <?=isset($nilai)?'class="active"':'';?>>
+                        <a href="<?=base_url('nilai');?>">
+                            <i class="fa fa-edit"></i> <span>Input Nilai Semester</span>
                         </a>
                     </li>
                     <?php endif;?>
@@ -259,6 +265,16 @@
                     <li <?=isset($report)?'class="active"':'';?>>
                         <a href="<?=base_url('raport');?>">
                             <i class="fa fa-print"></i> <span>Cetak Raport Bulanan</span>
+                        </a>
+                    </li>
+                    <li <?=isset($report)?'class="active"':'';?>>
+                        <a href="<?=base_url('raport');?>">
+                            <i class="fa fa-print"></i> <span>Cetak Raport Bulanan + STS</span>
+                        </a>
+                    </li>
+                    <li <?=isset($report)?'class="active"':'';?>>
+                        <a href="<?=base_url('raport');?>">
+                            <i class="fa fa-print"></i> <span>Cetak Raport Semester</span>
                         </a>
                     </li>
                     <?php endif;?>
