@@ -24,119 +24,120 @@ function ptsval(x) {
     $('[name="uas' + x + '"]').val("");
 }
 
-// function nilai1(s, x) {
-//     var n1 = parseInt($('[name="' + s + '1' + x + '"]').val());
-//     $('[name="rata_' + s + '' + x + '"]').val(n1);
-//     $('[name="' + s + '2' + x + '"]').val("");
-//     dropreadonly(s + '2' + x);
-//     $('[name="' + s + '1' + x + '"]').prop('readonly', true);
-// }
+function nilai1(s, x) {
+    var n1 = parseInt($('[name="' + s + '1' + x + '"]').val());
+    $('[name="rata_' + s + '' + x + '"]').val(n1);
+    $('[name="' + s + '2' + x + '"]').val("");
+    dropreadonly(s + '2' + x);
+    $('[name="' + s + '1' + x + '"]').prop('readonly', true);
+}
 
-// function nilai2(s, x) {
-//     var n1 = parseInt($('[name="' + s + '1' + x + '"]').val());
-//     var n2 = parseInt($('[name="' + s + '2' + x + '"]').val());
-//     var hasil = (n1 + n2) / 2;
+function nilai2(s, x) {
+    var n1 = parseInt($('[name="' + s + '1' + x + '"]').val());
+    var n2 = parseInt($('[name="' + s + '2' + x + '"]').val());
+    var hasil = (n1 + n2) / 2;
 
-//     $('[name="rata_' + s + '' + x + '"]').val(hasil);
-//     $('[name="' + s + '3' + x + '"]').val("");
-//     dropreadonly(s + '3' + x);
-//     $('[name="' + s + '2' + x + '"]').prop('readonly', true);
-// }
+    $('[name="rata_' + s + '' + x + '"]').val(hasil);
+    $('[name="' + s + '3' + x + '"]').val("");
+    dropreadonly(s + '3' + x);
+    $('[name="' + s + '2' + x + '"]').prop('readonly', true);
+}
 
-// function nilai3(s, x) {
-//     var n1 = parseInt($('[name="' + s + '1' + x + '"]').val());
-//     var n2 = parseInt($('[name="' + s + '2' + x + '"]').val());
-//     var n3 = parseInt($('[name="' + s + '3' + x + '"]').val());
-//     var hasil = (n1 + n2 + n3) / 3;
+function nilai3(s, x) {
+    var n1 = parseInt($('[name="' + s + '1' + x + '"]').val());
+    var n2 = parseInt($('[name="' + s + '2' + x + '"]').val());
+    var n3 = parseInt($('[name="' + s + '3' + x + '"]').val());
+    var hasil = (n1 + n2 + n3) / 3;
 
-//     $('[name="rata_' + s + '' + x + '"]').val(hasil);
-//     $('[name="' + s + '4' + x + '"]').val("");
-//     dropreadonly(s + '4' + x);
-//     $('[name="' + s + '3' + x + '"]').prop('readonly', true);
-// }
+    $('[name="rata_' + s + '' + x + '"]').val(hasil);
+    $('[name="' + s + '4' + x + '"]').val("");
+    dropreadonly(s + '4' + x);
+    $('[name="' + s + '3' + x + '"]').prop('readonly', true);
+}
 
-// function nilai4(s, x) {
-//     var n1 = parseInt($('[name="' + s + '1' + x + '"]').val());
-//     var n2 = parseInt($('[name="' + s + '2' + x + '"]').val());
-//     var n3 = parseInt($('[name="' + s + '3' + x + '"]').val());
-//     var n4 = parseInt($('[name="' + s + '4' + x + '"]').val());
-//     var hasil = (n1 + n2 + n3 + n4) / 4;
+function nilai4(s, x) {
+    var n1 = parseInt($('[name="' + s + '1' + x + '"]').val());
+    var n2 = parseInt($('[name="' + s + '2' + x + '"]').val());
+    var n3 = parseInt($('[name="' + s + '3' + x + '"]').val());
+    var n4 = parseInt($('[name="' + s + '4' + x + '"]').val());
+    var hasil = (n1 + n2 + n3 + n4) / 4;
 
-//     $('[name="rata_' + s + '' + x + '"]').val(hasil);
-//     $('[name="' + s + '5' + x + '"]').val("");
-//     dropreadonly(s + '5' + x);
-//     $('[name="' + s + '4' + x + '"]').prop('readonly', true);
-// }
+    $('[name="rata_' + s + '' + x + '"]').val(hasil);
+    $('[name="' + s + '5' + x + '"]').val("");
+    dropreadonly(s + '5' + x);
+    $('[name="' + s + '4' + x + '"]').prop('readonly', true);
+}
 
-// function nilai5(s, x) {
-//     var n1 = parseInt($('[name="' + s + '1' + x + '"]').val());
-//     var n2 = parseInt($('[name="' + s + '2' + x + '"]').val());
-//     var n3 = parseInt($('[name="' + s + '3' + x + '"]').val());
-//     var n4 = parseInt($('[name="' + s + '4' + x + '"]').val());
-//     var n5 = parseInt($('[name="' + s + '5' + x + '"]').val());
-//     var hasil = (n1 + n2 + n3 + n4 + n5) / 5;
+function nilai5(s, x) {
+    var n1 = parseInt($('[name="' + s + '1' + x + '"]').val());
+    var n2 = parseInt($('[name="' + s + '2' + x + '"]').val());
+    var n3 = parseInt($('[name="' + s + '3' + x + '"]').val());
+    var n4 = parseInt($('[name="' + s + '4' + x + '"]').val());
+    var n5 = parseInt($('[name="' + s + '5' + x + '"]').val());
+    var hasil = (n1 + n2 + n3 + n4 + n5) / 5;
 
-//     $('[name="rata_' + s + '' + x + '"]').val(hasil);
-//     $('[name="' + s + '6' + x + '"]').val("");
-//     dropreadonly(s + '6' + x);
-//     $('[name="' + s + '5' + x + '"]').prop('readonly', true);
-// }
+    $('[name="rata_' + s + '' + x + '"]').val(hasil);
+    $('[name="' + s + '6' + x + '"]').val("");
+    dropreadonly(s + '6' + x);
+    $('[name="' + s + '5' + x + '"]').prop('readonly', true);
+}
 
-// function nilai6(s, x) {
-//     var n1 = parseInt($('[name="' + s + '1' + x + '"]').val());
-//     var n2 = parseInt($('[name="' + s + '2' + x + '"]').val());
-//     var n3 = parseInt($('[name="' + s + '3' + x + '"]').val());
-//     var n4 = parseInt($('[name="' + s + '4' + x + '"]').val());
-//     var n5 = parseInt($('[name="' + s + '5' + x + '"]').val());
-//     var n6 = parseInt($('[name="' + s + '6' + x + '"]').val());
-//     var hasil = (n1 + n2 + n3 + n4 + n5 + n6) / 6;
+function nilai6(s, x) {
+    var n1 = parseInt($('[name="' + s + '1' + x + '"]').val());
+    var n2 = parseInt($('[name="' + s + '2' + x + '"]').val());
+    var n3 = parseInt($('[name="' + s + '3' + x + '"]').val());
+    var n4 = parseInt($('[name="' + s + '4' + x + '"]').val());
+    var n5 = parseInt($('[name="' + s + '5' + x + '"]').val());
+    var n6 = parseInt($('[name="' + s + '6' + x + '"]').val());
+    var hasil = (n1 + n2 + n3 + n4 + n5 + n6) / 6;
 
-//     $('[name="rata_' + s + '' + x + '"]').val(hasil);
-//     $('[name="' + s + '7' + x + '"]').val("");
-//     dropreadonly(s + '7' + x);
-//     $('[name="' + s + '6' + x + '"]').prop('readonly', true);
-// }
+    $('[name="rata_' + s + '' + x + '"]').val(hasil);
+    $('[name="' + s + '7' + x + '"]').val("");
+    dropreadonly(s + '7' + x);
+    $('[name="' + s + '6' + x + '"]').prop('readonly', true);
+}
 
-// function nilai7(s, x) {
-//     var n1 = parseInt($('[name="' + s + '1' + x + '"]').val());
-//     var n2 = parseInt($('[name="' + s + '2' + x + '"]').val());
-//     var n3 = parseInt($('[name="' + s + '3' + x + '"]').val());
-//     var n4 = parseInt($('[name="' + s + '4' + x + '"]').val());
-//     var n5 = parseInt($('[name="' + s + '5' + x + '"]').val());
-//     var n6 = parseInt($('[name="' + s + '6' + x + '"]').val());
-//     var n7 = parseInt($('[name="' + s + '7' + x + '"]').val());
-//     var hasil = (n1 + n2 + n3 + n4 + n5 + n6 + n7) / 7;
+function nilai7(s, x) {
+    var n1 = parseInt($('[name="' + s + '1' + x + '"]').val());
+    var n2 = parseInt($('[name="' + s + '2' + x + '"]').val());
+    var n3 = parseInt($('[name="' + s + '3' + x + '"]').val());
+    var n4 = parseInt($('[name="' + s + '4' + x + '"]').val());
+    var n5 = parseInt($('[name="' + s + '5' + x + '"]').val());
+    var n6 = parseInt($('[name="' + s + '6' + x + '"]').val());
+    var n7 = parseInt($('[name="' + s + '7' + x + '"]').val());
+    var hasil = (n1 + n2 + n3 + n4 + n5 + n6 + n7) / 7;
 
-//     $('[name="rata_' + s + '' + x + '"]').val(hasil);
-//     $('[name="' + s + '7' + x + '"]').prop('readonly', true);
-// }
+    $('[name="rata_' + s + '' + x + '"]').val(hasil);
+    $('[name="' + s + '7' + x + '"]').prop('readonly', true);
+}
 
-// function nilaiAkhir(x) {
-//     var kkm = parseInt($('[name="kkm"]').val());
-//     var rtp = parseInt($('[name="rata_tp' + x + '"]').val());
-//     var rnu = parseInt($('[name="rata_uh' + x + '"]').val());
-//     var pts = parseInt($('[name="pts' + x + '"]').val());
-//     var uas = parseInt($('[name="uas' + x + '"]').val());
-//     var na = (rtp + rnu + pts + uas) / 4;
+function nilaiAkhir(x) {
+    var kkm = parseInt($('[name="kkm"]').val());
+    var rtp = parseInt($('[name="rata_tp' + x + '"]').val());
+    var rnu = parseInt($('[name="rata_uh' + x + '"]').val());
+    // var pts = parseInt($('[name="pts' + x + '"]').val());
+    // var uas = parseInt($('[name="uas' + x + '"]').val());
+    // var na = (rtp + rnu + pts + uas) / 4;
+    var na = (rtp + rnu ) / 2;
 
-//     $('[name="akhir' + x + '"]').val(na);
-//     var selisih_kkm = (100 - kkm) / 3;
-//     if (parseInt(na) < kkm) {
-//         $('[name="grade' + x + '"]').val("D");
-//         $('[name="deskripsi' + x + '"]').val("Murid menunjukkan kemampuan kurang baik dalam memahami materi");
-//     } else if (parseInt(na) >= kkm && parseInt(na) <= Math.round(kkm + selisih_kkm) - 1) {
-//         $('[name="grade' + x + '"]').val("C");
-//         $('[name="deskripsi' + x + '"]').val("Murid menunjukkan kemampuan cukup baik dalam memahami materi");
-//     } else if (parseInt(na) >= Math.round(kkm + selisih_kkm) && parseInt(na) <= Math.round(kkm + (selisih_kkm * 2)) -
-//         1) {
-//         $('[name="grade' + x + '"]').val("B");
-//         $('[name="deskripsi' + x + '"]').val("Murid menunjukkan kemampuan baik dalam memahami materi");
-//     } else if (parseInt(na) >= Math.round(kkm + (selisih_kkm * 2)) && parseInt(na) <= (kkm + (selisih_kkm *
-//             3))) {
-//         $('[name="grade' + x + '"]').val("A");
-//         $('[name="deskripsi' + x + '"]').val("Murid menunjukkan kemampuan sangat baik dalam memahami materi");
-//     }
-// }
+    $('[name="akhir' + x + '"]').val(na);
+    var selisih_kkm = (100 - kkm) / 3;
+    if (parseInt(na) < kkm) {
+        $('[name="grade' + x + '"]').val("D");
+        $('[name="deskripsi' + x + '"]').val("Murid menunjukkan kemampuan kurang baik dalam memahami materi");
+    } else if (parseInt(na) >= kkm && parseInt(na) <= Math.round(kkm + selisih_kkm) - 1) {
+        $('[name="grade' + x + '"]').val("C");
+        $('[name="deskripsi' + x + '"]').val("Murid menunjukkan kemampuan cukup baik dalam memahami materi");
+    } else if (parseInt(na) >= Math.round(kkm + selisih_kkm) && parseInt(na) <= Math.round(kkm + (selisih_kkm * 2)) -
+        1) {
+        $('[name="grade' + x + '"]').val("B");
+        $('[name="deskripsi' + x + '"]').val("Murid menunjukkan kemampuan baik dalam memahami materi");
+    } else if (parseInt(na) >= Math.round(kkm + (selisih_kkm * 2)) && parseInt(na) <= (kkm + (selisih_kkm *
+            3))) {
+        $('[name="grade' + x + '"]').val("A");
+        $('[name="deskripsi' + x + '"]').val("Murid menunjukkan kemampuan sangat baik dalam memahami materi");
+    }
+}
 
 function infoKKM() {
     var kkm = parseInt($('[name="kkm"]').val());
@@ -162,13 +163,13 @@ function minmax(value, min, max) {
 <!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
-        Input Nilai Bulanan
+        Input Nilai
     </h1>
     <?php if(__session('access')=='super_user'):?>
     <ol class="breadcrumb">
         <li><a href="<?=base_url('dashboard');?>"><i class="fa fa-home"></i> Beranda</a></li>
-        <li><a href="<?=base_url('nilai');?>">Nilai Bulanan</a></li>
-        <li class="active">Input Nilai Bulanan</li>
+        <li><a href="<?=base_url('nilai');?>">Nilai</a></li>
+        <li class="active">Input Nilai</li>
     </ol>
     <?php endif;?>
 </section>
@@ -201,7 +202,7 @@ function minmax(value, min, max) {
                         <label for="kkm" class="col-xs-2 control-label">KKM</label>
                         <div class="col-xs-4">
                             <input type="hidden" name="current_url"
-                                value="<?=base_url('nilaiBulanan/input_bulanan/').$rowI->kelas_kd.'/'.$rowI->mapel_kd;?>">
+                                value="<?=base_url('nilai/input/').$rowI->kelas_kd.'/'.$rowI->mapel_kd;?>">
                             <input type="hidden" name="idkelas" value="<?=$rowI->idkelas;?>">
                             <input type="hidden" name="idmapel" value="<?=$rowI->idmapel;?>">
                             <input type="number" class="form-control" id="kkm" name="kkm" value="<?=$rowI->kkm;?>"
@@ -218,27 +219,27 @@ function minmax(value, min, max) {
                     <thead>
                         <tr>
                             <th rowspan="2" class="text-center" width="35" style="line-height:55px;">NO</th>
-                            <th rowspan="2" class="text-center" width="85" style="line-height:55px;">NIS</th>
+                            <th rowspan="2" class="text-center" width="85" style="line-height:55px;">NISN</th>
                             <th rowspan="2" class="text-center" width="300" style="line-height:55px;">NAMA LENGKAP</th>
-                            <th colspan="7" class="text-center" width="95">NILAI TUGAS</th>
+                            <!-- <th colspan="7" class="text-center" width="550">NILAI TUGAS</th> -->
                             <!-- <th rowspan="2" class="text-center" width="95" style="line-height:55px;">RNT</th> -->
-                            <th colspan="7" class="text-center" width="95">NILAI ULANGAN</th>
-                            <!-- <th rowspan="2" class="text-center" width="95" style="line-height:55px;">RNU</th>
-                            <th rowspan="2" class="text-center" width="95" style="line-height:55px;">PTS</th>
-                            <th rowspan="2" class="text-center" width="95" style="line-height:55px;">UAS</th> -->
-                            <th rowspan="2" class="text-center" width="95" style="line-height:55px;">NA</th>
+                            <!-- <th colspan="7" class="text-center" width="550">NILAI ULANGAN</th> -->
+                            <!-- <th rowspan="2" class="text-center" width="95" style="line-height:55px;">RNU</th> -->
+                            <th rowspan="2" class="text-center" width="95" style="line-height:55px;">TUGAS</th>
+                            <th rowspan="2" class="text-center" width="95" style="line-height:55px;">ULANGAN HARIAN</th>
+                            <th rowspan="2" class="text-center" width="95" style="line-height:55px;">NILAI TOTAL</th>
                             <th rowspan="2" class="text-center" width="85" style="line-height:55px;">GRADE</th>
                             <th rowspan="2" class="text-center" width="250" style="line-height:55px;">DESKRIPSI</th>
                         </tr>
-                        <tr>
-                            <!-- <th class="text-center">1</th>
+                        <!-- <tr>
+                            <th class="text-center">1</th>
                             <th class="text-center">2</th>
                             <th class="text-center">3</th>
                             <th class="text-center">4</th>
                             <th class="text-center">5</th>
                             <th class="text-center">6</th>
-                            <th class="text-center">7</th> -->
-                            <!-- <th class="text-center">1</th>
+                            <th class="text-center">7</th>
+                            <th class="text-center">1</th>
                             <th class="text-center">2</th>
                             <th class="text-center">3</th>
                             <th class="text-center">4</th>
@@ -256,7 +257,7 @@ function minmax(value, min, max) {
                             <td><?=$n++.'.';?></td>
                             <td><?=$row->nis;?></td>
                             <td><?=$row->nama;?></td>
-                            <td width="100">
+                            <!-- <td width="100">
                                 <input type="hidden" name="idnilai<?=$row->idsiswa;?>" value="<?=$nilai->idnilai;?>">
                                 <input type="number" class="form-control" id="tp1" name="tp1<?=$row->idsiswa;?>" min="0"
                                     max="100" placeholder="0" value="<?=$nilai->nilai_tp1;?>"
@@ -264,7 +265,7 @@ function minmax(value, min, max) {
                                     onchange="nilai1('tp',<?=$row->idsiswa;?>)"
                                     onclick="dropreadonly('tp1<?=$row->idsiswa;?>')">
                             </td>
-                            <!-- <td>
+                            <td>
                                 <input type="number" class="form-control" id="tp2" name="tp2<?=$row->idsiswa;?>" min="0"
                                     max="100" placeholder="0" value="<?=$nilai->nilai_tp2;?>"
                                     onkeyup="this.value = minmax(this.value,0,100)"
@@ -305,12 +306,12 @@ function minmax(value, min, max) {
                                     onkeyup="this.value = minmax(this.value,0,100)"
                                     onchange="nilai7('tp',<?=$row->idsiswa;?>)"
                                     onclick="dropreadonly('tp7<?=$row->idsiswa;?>')">
-                            </td> -->
-                            <!-- <td>
+                            </td>
+                            <td>
                                 <input type="number" class="form-control" id="rata_tp" name="rata_tp<?=$row->idsiswa;?>"
                                     min="0" max="100" placeholder="0" value="<?=$nilai->rata_tp;?>" readonly>
-                            </td> -->
-                            <!-- <td>
+                            </td>
+                            <td>
                                 <input type="number" class="form-control" id="uh1" name="uh1<?=$row->idsiswa;?>" min="0"
                                     max="100" placeholder="0" value="<?=$nilai->nilai_uh1;?>"
                                     onkeyup="this.value = minmax(this.value,0,100)"
@@ -358,27 +359,27 @@ function minmax(value, min, max) {
                                     onkeyup="this.value = minmax(this.value,0,100)"
                                     onchange="nilai7('uh',<?=$row->idsiswa;?>)"
                                     onclick="dropreadonly('uh7<?=$row->idsiswa;?>')">
-                            </td> -->
-                            <!-- <td>
+                            </td>
+                            <td>
                                 <input type="number" class="form-control" id="rata_uh" name="rata_uh<?=$row->idsiswa;?>"
                                     min="0" max="100" placeholder="0" value="<?=$nilai->rata_uh;?>" readonly>
                             </td> -->
-                            <!-- <td>
-                                <input type="number" class="form-control" id="pts" name="pts<?=$row->idsiswa;?>" min="0"
-                                    max="100" placeholder="0" value="<?=$nilai->nilai_pts;?>"
+                            <td>
+                                <input type="number" class="form-control" id="tugas" name="tugas<?=$row->idsiswa;?>" min="0"
+                                    max="100" placeholder="0" value="<?=$nilai->nilai_tugas;?>"
                                     onkeyup="this.value = minmax(this.value,0,100)"
-                                    onchange="ptsval(<?=$row->idsiswa;?>)"
-                                    onclick="dropreadonly('pts<?=$row->idsiswa;?>')">
+                                    onchange="tugasval(<?=$row->idsiswa;?>)"
+                                    onclick="dropreadonly('tugas<?=$row->idsiswa;?>')">
                             </td>
                             <td>
-                                <input type="number" class="form-control" id="uas" name="uas<?=$row->idsiswa;?>" min="0"
-                                    max="100" placeholder="0" value="<?=$nilai->nilai_uas;?>"
+                                <input type="number" class="form-control" id="uh" name="uh<?=$row->idsiswa;?>" min="0"
+                                    max="100" placeholder="0" value="<?=$nilai->nilai_uh;?>"
                                     onkeyup="this.value = minmax(this.value,0,100)"
-                                    onchange="nilaiAkhir(<?=$row->idsiswa;?>)">
-                            </td> -->
+                                    onchange="nilaiUh(<?=$row->idsiswa;?>)">
+                            </td>
                             <td>
                                 <input type="number" class="form-control" id="akhir" name="akhir<?=$row->idsiswa;?>"
-                                    min="0" max="100" placeholder="0" value="<?=$nilai->nilai_akhir;?>" readonly>
+                                    min="0" max="100" placeholder="0" value="<?=$nilai->nilai_total;?>" readonly>
                             </td>
                             <td>
                                 <input type="text" class="form-control" id="grade" name="grade<?=$row->idsiswa;?>"

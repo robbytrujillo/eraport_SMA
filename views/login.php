@@ -33,6 +33,7 @@
 </head>
 
 <body class="hold-transition login-page">
+    <br><br>
     <div class="login-box">
         <!-- <div class="login-logo">
             <img src="assets/dist/img/logo-ihbs.png" width="240px" height="100px">

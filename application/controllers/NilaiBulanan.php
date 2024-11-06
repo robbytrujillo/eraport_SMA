@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class NilaiBulanan extends CI_Controller {
+// class NilaiBulanan extends CI_Controller {
 
     public function __construct()
     {
@@ -83,25 +83,26 @@ class NilaiBulanan extends CI_Controller {
         foreach (siswa_by_kelas(_active_years()->idtahun_akademik,_active_years()->semester,$idkelas) as $row){
             $idnilai = $this->input->post('idnilai'.$row->idsiswa,true);
             $data = [
-                'nilai_tp1'=>$this->input->post('tp1'.$row->idsiswa,true),
-                'nilai_tp2'=>$this->input->post('tp2'.$row->idsiswa,true),
-                'nilai_tp3'=>$this->input->post('tp3'.$row->idsiswa,true),
-                'nilai_tp4'=>$this->input->post('tp4'.$row->idsiswa,true),
-                'nilai_tp5'=>$this->input->post('tp5'.$row->idsiswa,true),
-                'nilai_tp6'=>$this->input->post('tp6'.$row->idsiswa,true),
-                'nilai_tp7'=>$this->input->post('tp7'.$row->idsiswa,true),
-                'rata_tp'=>$this->input->post('rata_tp'.$row->idsiswa,true),
-                'nilai_uh1'=>$this->input->post('uh1'.$row->idsiswa,true),
-                'nilai_uh2'=>$this->input->post('uh2'.$row->idsiswa,true),
-                'nilai_uh3'=>$this->input->post('uh3'.$row->idsiswa,true),
-                'nilai_uh4'=>$this->input->post('uh4'.$row->idsiswa,true),
-                'nilai_uh5'=>$this->input->post('uh5'.$row->idsiswa,true),
-                'nilai_uh6'=>$this->input->post('uh6'.$row->idsiswa,true),
-                'nilai_uh7'=>$this->input->post('uh7'.$row->idsiswa,true),
-                'rata_uh'=>$this->input->post('rata_uh'.$row->idsiswa,true),
-                'nilai_pts'=>$this->input->post('pts'.$row->idsiswa,true),
-                'nilai_uas'=>$this->input->post('uas'.$row->idsiswa,true),
-                'nilai_akhir'=>$this->input->post('akhir'.$row->idsiswa,true),
+                // 'nilai_tp1'=>$this->input->post('tp1'.$row->idsiswa,true),
+                // 'nilai_tp2'=>$this->input->post('tp2'.$row->idsiswa,true),
+                // 'nilai_tp3'=>$this->input->post('tp3'.$row->idsiswa,true),
+                // 'nilai_tp4'=>$this->input->post('tp4'.$row->idsiswa,true),
+                // 'nilai_tp5'=>$this->input->post('tp5'.$row->idsiswa,true),
+                // 'nilai_tp6'=>$this->input->post('tp6'.$row->idsiswa,true),
+                // 'nilai_tp7'=>$this->input->post('tp7'.$row->idsiswa,true),
+                'nilai_tugas'=>$this->input->post('rata_tp'.$row->idsiswa,true),
+                'nilai_uh'=>$this->input->post('rata_uh'.$row->idsiswa,true),
+                // 'nilai_uh1'=>$this->input->post('uh1'.$row->idsiswa,true),
+                // 'nilai_uh2'=>$this->input->post('uh2'.$row->idsiswa,true),
+                // 'nilai_uh3'=>$this->input->post('uh3'.$row->idsiswa,true),
+                // 'nilai_uh4'=>$this->input->post('uh4'.$row->idsiswa,true),
+                // 'nilai_uh5'=>$this->input->post('uh5'.$row->idsiswa,true),
+                // 'nilai_uh6'=>$this->input->post('uh6'.$row->idsiswa,true),
+                // 'nilai_uh7'=>$this->input->post('uh7'.$row->idsiswa,true),
+                // 'rata_uh'=>$this->input->post('rata_uh'.$row->idsiswa,true),
+                // 'nilai_pts'=>$this->input->post('pts'.$row->idsiswa,true),
+                // 'nilai_uas'=>$this->input->post('uas'.$row->idsiswa,true),
+                'nilai_total'=>$this->input->post('akhir'.$row->idsiswa,true),
                 'nilai_huruf'=>$this->input->post('grade'.$row->idsiswa,true),
                 'deskripsi'=>$this->input->post('deskripsi'.$row->idsiswa,true)
             ];
